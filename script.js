@@ -5,7 +5,7 @@ let guesses = [];
 let correctNumber = getRandomNumber();
 
 window.onload = function() {
-    document.getElementById("number-submit").addEventListener("click", playGame);
+    document.getElementById("number-submit").addEventListener("click", playGame, clearField);
     document.getElementById("restart-game").addEventListener("click", initGame)
 }
 
@@ -17,6 +17,7 @@ function playGame(){
   displayResult(numberGuess);
   saveGuessHistory(numberGuess);
   displayHistory();
+  clearField();
 }
 
 function displayResult(numberGuess){
@@ -32,6 +33,14 @@ function displayResult(numberGuess){
 function initGame(){
   location.reload();
 }
+
+/**
+ * Clear Input textfield after every check
+ */
+
+ function clearField(){
+    document.getElementById("number-guess").value=""
+ }
 
 /**
  * Reset the HTML content for guess history
