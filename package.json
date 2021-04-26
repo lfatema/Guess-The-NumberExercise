@@ -1,0 +1,23 @@
+{
+  "name": "Guess-The-NumberExercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfatema/Guess-The-NumberExercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfatema/Guess-The-NumberExercise/issues"
+  },
+  "homepage": "https://github.com/lfatema/Guess-The-NumberExercise#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
